@@ -1,2 +1,2 @@
-# org.javacream.training.aspectj
-a simple project using AspectJ
+# org.javacream.training.aop
+a simple project demonstrating aop
