@@ -1,20 +1,17 @@
-package org.javacream.training.aop.invoice;
+package org.javacream.training.aop.service.invoice;
 
 import java.util.Random;
 
-public class InvoiceServiceImpl implements InvoiceService{
+public class InvoiceServiceImpl {
 	private Random random = new Random();
-	@Override
 	public Invoice create(double amount) {
 		return new Invoice(random.nextLong(), amount);
 	}
 
-	@Override
 	public Invoice find(long id) {
 		return new Invoice(id, random.nextDouble());
 	}
 
-	@Override
 	public void cancel(long id) {
 		//Nothing...
 	}

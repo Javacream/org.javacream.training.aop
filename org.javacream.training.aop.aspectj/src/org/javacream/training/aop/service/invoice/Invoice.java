@@ -1,9 +1,12 @@
-package org.javacream.training.aop.invoice;
+package org.javacream.training.aop.service.invoice;
 
 public class Invoice {
 
+	
 	private long id;
+
 	private double amount;
+
 	@Override
 	public String toString() {
 		return "Invoice [id=" + id + ", amount=" + amount + "]";
@@ -12,9 +15,6 @@ public class Invoice {
 		super();
 		this.id = id;
 		this.amount = amount;
-	}
-	public long getId() {
-		return id;
 	}
 	public double getAmount() {
 		return amount;
